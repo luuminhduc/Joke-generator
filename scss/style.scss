@@ -1,0 +1,99 @@
+$font-stack: 'Dosis', sans-serif;
+$light-color: #F3F3F3;
+$primary-color: #2E88C4;
+$dark-color: #808A93;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-stack;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: $light-color;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+    height: 65%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 6px lighten($color: $primary-color, $amount: 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+    width: 20%;
+    font-size: 17px;
+    font-family: $font-stack;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.tag-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid darken($color: $light-color, $amount: 10%);
+    padding: 10px;
+
+    span{
+        background-color: lighten($color: $primary-color, $amount: 45%);
+        color: $primary-color;
+        padding: 7px 13px;
+        font-size: 13px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    span.active{
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 0 15px;
+
+    small{
+        font-size: 17px;
+        margin: 10px auto;
+        line-height: 1.6;
+    }
+
+    .joke-flag{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: $primary-color;
+    }
+}
